@@ -1,0 +1,1 @@
+export const fullUrl = (path) => `${Cypress.config("baseUrl")}${path}`;

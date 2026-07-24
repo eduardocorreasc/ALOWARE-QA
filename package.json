@@ -1,0 +1,21 @@
+{
+  "name": "aloware-qa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "test": "cypress run",
+    "test:regression": "cypress run --env tags=\"not @known-issue\"",
+    "test:known-issues": "cypress run --env tags=\"@known-issue\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^26.0.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.8",
+    "cypress": "^15.19.0"
+  }
+}
